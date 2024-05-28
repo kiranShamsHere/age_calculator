@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator | JavaScript</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h2 class=""text>Age Calculator</h2>
+        <div class="content">
+            <div class="form-group">
+                <input type="text" id="day" autocomplete="off" required>
+                <label for="day">Date:</label>
+            </div>
+            <div class="form-group">
+                <input type="text" id="month" autocomplete="off" required>
+                <label for="month">Month:</label>
+            </div>
+            <div class="form-group">
+                <input type="text" id="year" autocomplete="off" required>
+                <label for="year">Year:</label>
+                
+            </div>
+            <button id="open-popup">Calculate!</button>
+        </div>
+    </div>
+
+    <div class="popup">
+        <button class="close-btn">&times;</button>
+        <h2>You Are</h2>
+        <div class="box age_num">
+        </div>
+    </div>
+
+    <div class="popup empty-popup">
+        <button class="close-btn">&times;</button>
+        <h2>Oops!</h2>
+        <p>Looks like you have not filled all the fields!</p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>
